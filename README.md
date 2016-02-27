@@ -1,5 +1,5 @@
 ---
-title: "README.md"
+title: "CodeBook.md"
 author: "Angela Camp"
 date: "February 25, 2016"
 output: html_document
@@ -51,13 +51,4 @@ The tidy data set can be read into R using the following:
 
 ```r
 data <- read.table("meanstdavgs.csv", header = TRUE)
-```
-
-```
-## Warning in file(file, "rt"): cannot open file 'meanstdavgs.csv': No such
-## file or directory
-```
-
-```
-## Error in file(file, "rt"): cannot open the connection
 ```
