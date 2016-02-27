@@ -67,8 +67,8 @@ levels(meanstddata$activityname) <- activitylabels$V2
 ## 5. From the data set in step 4, creates a second, independent tidy data 
 ##    set with the average of each variable for each activity and each subject.
 meanstdavgs <- aggregate(. ~ subject+activityname, data = meanstddata, FUN = mean)
-write.csv(meanstdavgs, file = "meanstdavgs.csv")
+write.table(meanstdavgs, file = "meanstdavgs.csv", row.names = FALSE)
 
-##  ----- OUTPUTTING THE DATA -----
+##  ----- READING THE DATA -----
 ## The table can be read back into R with the following command:
 ## data <- read.csv("meanstdavgs.csv", header = TRUE)
