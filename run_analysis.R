@@ -10,13 +10,13 @@
 library(dplyr)
 
 ## ----- DOWNLOADING THE DATA -----
-
-## download data to the working directory
-url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(url, destfile = "./data.zip", mode = "wb")
+## Note: This code should be run if the data is not already in
+## the working director.
+## url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+## download.file(url, destfile = "./data.zip", mode = "wb")
 
 ## unzip the data file
-unzip("data.zip")
+## unzip("data.zip")
 
 ## ----- LOADING THE DATA -----
 
